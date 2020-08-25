@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link 
+    rel="stylesheet" type="text/css" href="style.css">
+    <title>Tipper</title>
+</head>
+<body>
+    <main id="container">
+    <h1>Shared Bill Calculator</h1>
+    <section>
+        <div class="bill">
+            <label for="theBill">Bill</label>
+            <input type="number" placeholder="Bill Amount" id="theBill" />
+        </div>
+        <div>
+            <div class="space-between">
+                <label for="tipInput">Choose Tip</label>
+                <span id="tipPercent"></span>
+
+            </div>
+            <input type="range" value="0" id="tipInput" class="range">
+        </div>
+        <div class="space-between">
+            <span>Tip</span>
+            <span id="tipValue"></span>
+        </div>
+        <hr />
+        <div class="space-between total">
+            <span>Total</span>
+            <span id=AmountwithTip></span>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div class="space-between">
+                <label for="splitInput">Number of People</label>
+                <span id="splitValue"></span>
+            </div>
+            <input type = "range" min="1" max="10" value=1 id="splitInput" class="range"/>
+        </div>
+
+        <div class="space-between">
+            <span>Bill Per Person</span>
+            <span id="billEach"></span>
+        </div>
+
+        <div class="space-between">
+            <span>Tip Per Person</span>
+            <span id="tipEach"></span>
+        </div>
+        <div>
+            <form>
+        <p>How was your service?
+              <p>
+                <select id="serviceQuality">
+              <option disabled selected value="0">Choose an Option</option>
+              <option value="0.3">100% - Outstanding</option>
+              <option value="0.2">80% - Good</option>
+              <option value="0.15">60% - Average</option>
+              <option value="0.1">40% - Bad</option>
+              <option value="0.05">20% - Terrible</option>
+          </select>
+  
+      </form>
+        </div>
+        
+    </section>
+
+    
+</main>
+<script type="text/javascript" src="tipcalculator.js"></script>
+</body>
+</html>
